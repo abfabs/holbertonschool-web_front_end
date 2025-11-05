@@ -1157,10 +1157,9 @@ h6 {
 
 
 
-.card-work .card-outer:hover {
+.card-work:hover .card-outer {
     transform: scale(0.95);
 }
-
 
 
 
