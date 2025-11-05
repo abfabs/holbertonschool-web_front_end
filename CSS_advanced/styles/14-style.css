@@ -1,7 +1,7 @@
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
 
 /* Document
-   ========================================================================== */
+========================================================================== */
 
 /**
  * 1. Correct the line height in all browsers.
@@ -16,7 +16,7 @@ html {
 }
 
 /* Sections
-   ========================================================================== */
+========================================================================== */
 
 /**
  * Remove the margin in all browsers.
@@ -45,7 +45,7 @@ h1 {
 }
 
 /* Grouping content
-   ========================================================================== */
+========================================================================== */
 
 /**
  * 1. Add the correct box sizing in Firefox.
@@ -74,7 +74,7 @@ pre {
 }
 
 /* Text-level semantics
-   ========================================================================== */
+========================================================================== */
 
 /**
  * Remove the gray background on active links in IE 10.
@@ -151,7 +151,7 @@ sup {
 }
 
 /* Embedded content
-   ========================================================================== */
+========================================================================== */
 
 /**
  * Remove the border on images inside links in IE 10.
@@ -162,7 +162,7 @@ img {
 }
 
 /* Forms
-   ========================================================================== */
+========================================================================== */
 
 /**
  * 1. Change the font styles in all browsers.
@@ -341,7 +341,7 @@ textarea {
 }
 
 /* Interactive
-   ========================================================================== */
+========================================================================== */
 
 /*
  * Add the correct display in Edge, IE 10+, and Firefox.
@@ -360,7 +360,7 @@ summary {
 }
 
 /* Misc
-   ========================================================================== */
+========================================================================== */
 
 /**
  * Add the correct display in IE 10+.
@@ -379,12 +379,40 @@ template {
 }
 
 
-/* YOUR CUSTOM STYLES START HERE */
 
 html {
     scroll-behavior: smooth;
     font-size: 62.5%;
 }
+
+
+
+:root {
+    --color-primary: #d73953;
+    --color-black: #090909;
+    --color-white: #ffffff;
+    --color-light-grey: #f3f3f3;
+    --color-dark-grey: #353535;
+    --text-color: var(--color-black);
+    --font-family-base: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+    --font-family-title: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
+    --font-size-small: 1.2rem;
+    --font-size-medium: 1.6rem;
+    --font-size-large: 1.8rem;
+    --font-size-x-large: 2.3rem;
+    --font-size-xx-large: 4.8rem;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --line-height-small: 1.2;
+    --line-height-base: 1.5;
+    --line-height-big: 1.8;
+    --section-header-align: center;
+    --section-tagline-transform: uppercase;
+    --section-title-margin: 0;
+    --section-title-color: var(--color-black);
+}
+
+
 
 body {
     color: var(--text-color);
@@ -392,13 +420,9 @@ body {
     font-size: var(--font-size-medium);
     font-weight: var(--font-weight-regular);
     line-height: var(--line-height-base);
-
 }
 
-a {
-    color: #161616;
-    text-decoration: none;
-}
+
 
 a:link {
     color: var(--text-color);
@@ -417,17 +441,25 @@ a:active {
     background-color: var(--color-light-grey);
 }
 
+
+
 .visually-hidden {
     display: none;
 }
+
+
+
+.section-header {
+    text-align: var(--section-header-align);
+}
+
+
 
 .card-category {
     color: var(--color-primary);
 }
 
-.section-header {
-    text-align: var(--section-header-align);
-}
+
 
 .section-title {
     font-family: var(--font-family-title);
@@ -437,6 +469,8 @@ a:active {
     color: var(--section-title-color);
 }
 
+
+
 .section-tagline {
     color: var(--color-primary);
     font-family: var(--font-family-title);
@@ -444,32 +478,14 @@ a:active {
     font-weight: var(--font-weight-bold);
 }
 
-h1 h2 h3 h4 h5 h6 {
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: var(--font-family-title);
     font-weight: var(--font-weight-bold);
-}
-
-:root {
-    --color-primary: #D73953;
-    --color-black: #090909;
-    --color-white: #ffffff;
-    --color-light-grey: #f3f3f3;
-    --color-dark-grey: #353535;
-    --text-color: var(--color-primary);
-    --font-family-base: Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
-    --ont-family-title: Raleway, Helvetica Neue, Helvetica, Arial, sans-serif;
-    --font-size-small: 1.2rem;
-    --font-size-medium: 1.6rem;
-    --font-size-large: 1.8rem;
-    --font-size-x-large: 2.3rem;
-    --font-size-xx-large: 4.8rem;
-    --font-weight-regular: 400;
-    --font-weight-bold: 700;
-    --line-height-small: 1.2;
-    --line-height-base: 1.5;
-    --line-height-big: 1.8;
-    --section-header-align: center;
-    --section-tagline-transform: uppercase;
-    --section-title-margin: 0;
-    --section-title-color: var(--color-black);
 }
